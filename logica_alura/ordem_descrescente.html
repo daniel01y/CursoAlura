@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha(){
+		document.write("<br><br>");
+	}
+
+	function mostra(texto){
+		document.write(texto);
+		pulaLinha();
+	}
+
+	var contadorDescrescente = 20;
+
+	while(contadorDescrescente >= 0){
+		mostra(contadorDescrescente);
+		contadorDescrescente--;
+	}
+
+	mostra("FIM!");
+
+</script>

@@ -21,19 +21,25 @@
     }
 
     var numeroPensado = sorteia(10);
+
+    var tentativas = 1;
+    while(tentativas <= 3){
     var chute = parseInt(prompt("Digite seu chute "));
     
     if(chute == numeroPensado){
         mostra("Você acertou o chute");
+        break;
     }
     else{
-        mostra("Você errou o chute, o número pensado foi = " + numeroPensado);
+        mostra("Você errou o chute");
     }
     if(chute > numeroPensado){
         mostra("O número chutado foi maior que o numero pensado");
     }
     else if (chute < numeroPensado){
         mostra("O número chutado foi menor que o numero pensado");
+    }
+    tentativas++;
     }
 
 </script>
